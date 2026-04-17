@@ -1,0 +1,24 @@
+{
+  "name": "yet-another-js-course-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrii19m/yet-another-js-course-playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrii19m/yet-another-js-course-playwright/issues"
+  },
+  "homepage": "https://github.com/andrii19m/yet-another-js-course-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
