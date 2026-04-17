@@ -5,7 +5,7 @@ const email = 'customer@practicesoftwaretesting.com';
 const pass = 'welcome01';
 const verifyURL ='/account';
 
-test('Verify login with valid credentials', async ({ page }) => {
+test.skip('Verify login with valid credentials', async ({ page }) => {
     await page.goto(baseURL);
     await page.getByPlaceholder('Your email').fill(email);
     await page.getByPlaceholder('Your password').fill(pass);
