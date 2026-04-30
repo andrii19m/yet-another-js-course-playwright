@@ -17,6 +17,9 @@ export default defineConfig([
         },
       },
     },
+    rules: {
+      '@typescript-eslint/no-floating-promises': 'error',
+    },
   },
   tseslint.configs.recommended,
   {
@@ -24,7 +27,7 @@ export default defineConfig([
     ...playwright.configs['flat/recommended'],
     rules: {
       ...playwright.configs['flat/recommended'].rules,
-      
+      '@typescript-eslint/no-floating-promises': 'error',
     },
   },
 ]);

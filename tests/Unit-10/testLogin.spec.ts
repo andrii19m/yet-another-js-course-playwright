@@ -11,9 +11,6 @@ test('Verify login with valid credentials', async ({ page }) => {
     const loginPage = new LoginPage;
     await page.goto(baseURL);
     await loginPage.performLogin(page);
-    // await page.getByPlaceholder('Your email').fill(email);
-    // await page.getByPlaceholder('Your password').fill(pass);
-    // await page.getByRole('button', { name: /Login/i }).click();
 
     await expect(page).toHaveURL(verifyURL);
     await expect(page.getByRole('heading', { name: 'My account' })).toBeVisible();

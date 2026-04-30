@@ -14,15 +14,3 @@ export class HomePage {
         await this.header.verifyHeader();
     }
 }
-
-export class ProductDetailsPage {
-    page: Page;
-    name: string;
-    price: number;
-
-    constructor(page: Page) {
-        this.page = page;
-        this.name = 'Combination Pliers';
-        this.price = 14.15;
-    }
-}

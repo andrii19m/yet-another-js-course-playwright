@@ -10,11 +10,11 @@ export class Header {
 
     constructor(page: Page) {
         this.page = page;
-        this.home = page.locator('[data-test="nav-home"]');
-        this.categories = page.locator('[data-test="nav-categories"]');
-        this.contact = page.locator('[data-test="nav-contact"]');
-        this.signIn = page.locator('[data-test="nav-sign-in"]');
-        this.languageSelect = page.locator('[data-test="language-select"]');
+          this.home = page.getByTestId('nav-home');
+        this.categories = page.getByTestId('nav-categories');
+        this.contact = page.getByTestId('nav-contact');
+        this.signIn = page.getByTestId('nav-sign-in');
+        this.languageSelect = page.getByTestId('language-select');
     }
 
     async verifyHeader(): Promise<void> {
